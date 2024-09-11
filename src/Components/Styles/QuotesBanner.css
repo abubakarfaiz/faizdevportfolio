@@ -1,0 +1,80 @@
+
+.quotesBanner{
+    background-image: url("/public/banner-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.quotesBanner .v-center{
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.quotesBanner .v-center .quoteBanner_icon{
+    font-size: 60px;
+    color: var(--primary-color);
+}
+.quotesBanner .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quotesBanner .container p{
+    color: white;
+    font-size: 35px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+.quotesBanner .container p:last-child{
+    color: var(--primary-color);
+    font-size: 15px;
+    font-family: var(--nunito);
+    border-left: 1px solid gray ;
+    padding-left: 13px;
+    margin-bottom: 0;
+}
+.quotesBanner svg{
+    /* width: 120px;
+    height: 120px; */
+    color: var(--primary-color);
+    transform: rotate(180deg);
+}
+@media(max-width:768px){
+    .quotesBanner .container p {
+        color: white;
+        font-size: 25px;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    .quotesBanner svg{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width:768px){
+    .quotesBanner .container p {
+        color: white;
+        font-size: 20px;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    .quotesBanner svg{
+        width: 80px;
+        height: 80px;
+    }
+}
+.de-gradient-banner-4{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg, rgba(23, 26, 29, 1) 0%, rgba(23, 26, 29, 0) 100%);
+  }

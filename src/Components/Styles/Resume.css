@@ -1,0 +1,68 @@
+.resume-section{
+    padding: 90px 0;
+}
+.resume-section .p-4 h3{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.resume-section ul .timeline-item{
+    /* border-left: 1px solid var(--resume-border); */
+    border-left: 1px solid rgba(206, 206, 206, 0.664);
+}
+.resume-section .timeline{
+    position: relative;
+    counter-reset: list 0;
+    padding: 0;
+    padding-left: 22px;
+}
+.resume-section .timeline .timeline-title{
+    background: var(--resume-title-bg);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+.resume-section .timeline .timeline-title::before{
+    color: #fff;
+    position: relative;
+    left: -22px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    counter-increment: list;
+    content: counter(list);
+}
+.resume-section .timeline .timeline-text{
+    margin: 0;
+    padding: 0 0 40px 40px;
+}
+.resume-section .timeline .timeline-text .timeline-span{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 18px;
+}
+.resume-section .timeline .timeline-text .timeline-company{
+    margin-bottom: 10px;
+    display: block;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+.resume-section .timeline .timeline-text p{
+    font-family: var(--nunito);
+    font-size: 16px;
+    /* color: var(--resume-p); */
+    color: rgb(104, 104, 104);
+}
+.resume-section ul .timeline-item:last-child {
+    border-left-color: transparent;
+}
+@media(max-width:991px){
+    .resume-section {
+        padding: 0px !important;
+    }
+}

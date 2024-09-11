@@ -1,0 +1,71 @@
+.Contact-section{
+    /* padding: 152px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/public/contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* margin-top: 300px; */
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+.Contact-section .whatido h3{
+    color: white !important;
+}
+
+.Contact-section .form .field-set input{
+    margin-bottom: 25px;
+}
+.Contact-section .form  input, .form textarea{
+    border: solid 1px rgba(173, 50, 50, 0.6);
+    background: transparent;
+}
+.Contact-section .form textarea{
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+.Contact-section .form textarea:focus{
+    background: transparent;
+}
+ .btn-border {
+    padding: 10px 30px 10px 30px;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    border-radius: 40px;
+    color: #fff;
+    /* font-family: "Poppins"; */
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-border:hover{
+    background: red;
+  } 
+  .bg-transparent{
+    background: transparent;
+  }
+
+  .Contact-section .shape-top{
+    background: linear-gradient(180deg, rgba(23, 26, 29, 1) 0%, rgba(23, 26, 29, 0) 100%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+  }
+ .Contact-section .shape-bottom{
+    background: linear-gradient(0deg, rgba(23, 26, 29, 1) 0%, rgba(23, 26, 29, 0) 100%);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+  }
